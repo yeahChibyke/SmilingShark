@@ -1,66 +1,40 @@
-## Foundry
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-Foundry consists of:
+# SmilingShark NFT
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+**Welcome to the SmilingShark NFT project! This repository contains the SmilingShark smart contract, an Ethereum-based non-fungible token (NFT) collection. Each SmilingShark NFT is a unique digital asset represented on the blockchain.**
 
-## Documentation
+## Overview
 
-https://book.getfoundry.sh/
+- ### Name: 
 
-## Usage
+    SmilingShark
 
-### Build
+- ### Symbol:
 
-```shell
-$ forge build
-```
+    $SS
 
-### Test
+- ### Maximum Supply: 
 
-```shell
-$ forge test
-```
+    5
 
-### Format
+SmilingShark is implemented as an ERC-721 compliant contract, inheriting from OpenZeppelin's ERC721, ERC721Enumerable, and ERC721URIStorage contracts.
 
-```shell
-$ forge fmt
-```
+## Minting a SmilingShark NFT
 
-### Gas Snapshots
 
-```shell
-$ forge snapshot
-```
 
-### Anvil
+## Contributing
 
-```shell
-$ anvil
-```
+Contributions to improve the functionality, add features, or address issues are welcome. Feel free to open issues, submit pull requests, or engage with the community.
 
-### Deploy
+Let's make SmilingShark NFTs a swimming success in the Ethereum ecosystem! 🦈🚀
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+## License
 
-### Cast
+This project is licensed under the [MIT License](https://opensource.org/license/mit/) .
 
-```shell
-$ cast <subcommand>
-```
+### Token URI
 
-### Help
+ipfs://QmTzUQyUXsJnLvVgrgnvoNxFkuprdwTZN7iwrUCLHbo8d6
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
