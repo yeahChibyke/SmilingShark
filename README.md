@@ -1,6 +1,6 @@
 
 
-# SmilingShark NFT
+# SmilingShark NFT 🦈
 
 **Welcome to the SmilingShark NFT project! This repository contains the SmilingShark smart contract, an Ethereum-based non-fungible token (NFT) collection. Each SmilingShark NFT is a unique digital asset represented on the blockchain.**
 

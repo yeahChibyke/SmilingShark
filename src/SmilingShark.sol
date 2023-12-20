@@ -15,6 +15,8 @@ contract SmilingShark is ERC721, ERC721Enumerable, ERC721URIStorage {
   uint256 public MAX_SUPPLY = 5;
   // Public variable to keep track of the current supply of tokens
   uint256 public currentSupply;
+  // token uri
+  string uri;
 
   // Constructor function that sets the name and symbol of the token
   constructor()
@@ -22,15 +24,17 @@ contract SmilingShark is ERC721, ERC721Enumerable, ERC721URIStorage {
   {
       // Initialize the next token ID to 1
       _nextTokenId = 1;
+
+      // Initialize the token uri
+      uri = "ipfs://QmTzUQyUXsJnLvVgrgnvoNxFkuprdwTZN7iwrUCLHbo8d6";
   }
 
-  /**
-   * @notice Mint a new token
-   * @param to The address to mint the token to
-   * @param uri The URI for the token
-   * @return A message indicating the remaining supply
-   */
-  function safeMint(address to, string memory uri) public returns(string memory) {
+    /**
+    * @notice Mint a new token
+    * @param to The address to mint the new token to
+    * @return A message indicating the remaining supply
+    */
+  function safeMint(address to) public returns(string memory) {
       // Get the next token ID and increment it
       uint256 tokenId = _nextTokenId++;
       // Check if the maximum supply has been reached
